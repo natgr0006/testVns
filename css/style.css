@@ -1,0 +1,280 @@
+/*===Comon Style===*/
+
+html {
+    box-sizing: border-box;
+    color: #383838;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+/*===Fonts===*/
+
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "FiraSansBoldItalic";
+    src: url("../fonts/FiraSansBoldItalic/FiraSansBoldItalic.eot");
+    src: url("../fonts/FiraSansBoldItalic/FiraSansBoldItalic.eot?#iefix")format("embedded-opentype"), url("../fonts/FiraSansBoldItalic/FiraSansBoldItalic.woff") format("woff"), url("../fonts/FiraSansBoldItalic/FiraSansBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ProximaNovaBold";
+    src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot");
+    src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix")format("embedded-opentype"), url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"), url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.serch__inner {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 24px;
+    padding-bottom: 28px;
+}
+
+.search__inner-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search__input+.search__input {
+    padding-left: 40px;
+}
+
+.search__cont-number,
+.search__cont-adult,
+.search__count-children {
+    width: 60px;
+}
+
+label {
+    font-family: "MyriadProRegular";
+    font-size: 12px;
+    display: block;
+    padding-bottom: 12px;
+}
+
+.add__button {
+    background: #fed18c;
+    border: 2px solid #fed18c;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    margin-left: 22px;
+}
+
+.add__button:hover {
+    background: #fff;
+    color: #fed18c;
+    border: 2px solid #fed18c;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.search__button {
+    background: #fdb748;
+    border: 2px solid #fdb748;
+    padding: 26px 56px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    font-family: "ProximaNovaBold";
+}
+
+.search__button:hover {
+    background: #fff;
+    color: #fdb748;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.search__place,
+.search__data-begin,
+.search__data-end {
+    font-family: "FiraSansBoldItalic";
+    font-size: 16px;
+    border: none;
+}
+
+.search__place {
+    background: url('../img/place.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20px;
+    background-size: auto 90%;
+    padding-left: 20px;
+}
+
+.search__data-begin {
+    background: url('../img/calendar.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20px;
+    background-size: auto 90%;
+    padding-left: 20px;
+}
+
+.first__input {
+    position: relative;
+}
+
+.first__input::after {
+    content: "";
+    width: 2px;
+    height: 30px;
+    background: #e9e9e9;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.second__input {
+    position: relative;
+}
+
+.second__input::after {
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: #e9e9e9;
+    position: absolute;
+    top: 35px;
+    right: 0;
+}
+
+.third__input {
+    position: relative;
+}
+
+.third__input::after {
+    content: "";
+    width: 2px;
+    height: 30px;
+    background: #e9e9e9;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.add__button {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 15px;
+}
+
+
+/*===Media Quarities===*/
+
+@media (max-width: 575px) {
+    .search__inner-block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .serch__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    input {
+        margin-bottom: 20px;
+    }
+    .first__input::after {
+        display: none;
+    }
+    .second__input::after {
+        display: none;
+    }
+    .third__input::after {
+        display: none;
+    }
+    .search__input+.search__input {
+        padding-left: 2px;
+    }
+}
+
+
+/* sm (>=576 и <=767) */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .serch__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .search__inner-block {
+        padding-bottom: 25px;
+    }
+}
+
+
+/* md (>=768 и <=991) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .serch__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .search__inner-block {
+        padding-bottom: 25px;
+    }
+}
+
+
+/* lg (>=992 и <=1199) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .search__input+.search__input {
+        padding-left: 20px;
+    }
+}
+
+
+/* xl (>=1200) */
+
+@media (min-width: 1200px) {}

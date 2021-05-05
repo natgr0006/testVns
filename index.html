@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="search">
+        <div class="container">
+
+            <form action="/" method="get">
+                <div class="serch__inner">
+                    <div class="search__inner-block">
+                        <div class="search__input first__input">
+                            <label for="place">Место или название отеля</label>
+                            <input class="search__place" id="place" type="text" placeholder="Введите здесь место">
+                        </div>
+
+                        <div class="search__input second__input ">
+                            <label for="data-begin">Заезд</label>
+                            <input class="search__data-begin" id="data-begin" type="date">
+                        </div>
+                        <div class="search__input third__input">
+                            <label for="data-end">Выезд</label>
+                            <input class="search__data-end" id="data-end" type="date">
+                        </div>
+                    </div>
+                    <div class="search__inner-block">
+                        <div class="search__input">
+                            <label for="cont-number">Номера</label>
+                            <input class="search__cont-number" id="cont-number" type="number" min="0" max="100" placeholder="1">
+                        </div>
+
+                        <div class="search__input">
+                            <label for="cont-adult">Взрослые</label>
+                            <input class="search__cont-adult" id="cont-adult" type="number" min="0" max="30" placeholder="1">
+                        </div>
+
+                        <div class="search__input">
+                            <label for="count-children">Дети</label>
+                            <input class="search__count-children" id="count-children" type="number" min="0" max="20" placeholder="0">
+                        </div>
+                    </div>
+                    <div class="search__inner-block">
+                        <input class="add__button" id="add__id" type="button" value="+">
+                        <input class="search__button" id="serch__id" type="button" value="Найти">
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
